@@ -208,6 +208,146 @@ html, body {
   width: 227px;
   text-wrap: wrap;
 }
+.let-conect {
+  background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.let-conect .background-lines {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.let-conect .container {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .let-conect .container {
+    margin-bottom: 120px;
+  }
+}
+.let-conect .container h2 {
+  padding: 130px 0px 90px 0px;
+  font-family: "DM Sans";
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.information .container {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .information .container {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .information .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .information .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.information .container > div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(138, 138, 138, 0.2588235294);
+  padding: 20px 35px;
+}
+@media (min-width: 768px) {
+  .information .container > div {
+    padding: 30px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .information .container > div {
+    padding: 40px 70px;
+  }
+}
+.information .container > div .icon {
+  font-size: 30px;
+  padding: 15px;
+  margin-right: 20px;
+}
+.information .container > div .text h2 {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.information .container > div .text h3 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.message .container {
+  background-color: #F0EFE9;
+  padding-top: 125px;
+}
+.message .container h2 {
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+}
+.message .container .input-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .message .container .input-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 150px;
+  }
+}
+.message .container .input-info input {
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding: 15px 30px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+.message .container .input-info #M {
+  padding-bottom: 150px;
+}
+@media (min-width: 768px) {
+  .message .container .button-sendMessage {
+    padding: 20px 150px;
+  }
+}
+.message .container .button-sendMessage .btn-yellow {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .map {
+    margin-top: 120px;
+  }
+}
+.map img {
+  max-width: 100%;
+  min-width: 100%;
+}
+@media (min-width: 768px) {
+  .map img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
