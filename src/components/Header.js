@@ -3,6 +3,7 @@ import React from 'react'
 import logo from '../assets/images/LogoType.svg';
 
 
+
 const header = () => {
   return (
 
@@ -62,6 +63,13 @@ const header = () => {
       </div>
     </div>
   </header>
+
+
+
+
+
+
+
   
    
 

@@ -1,11 +1,12 @@
 import React from 'react'
 import manPhoto from '../assets/images/showcase-image.svg'
+import backGroundLins from '../assets/images/background-lines.svg'
 
 const ShowCase = () => {
   return (
     <section className="showcase">
   <div className="background-lines">
-    <img src="images/background-lines.svg" alt="" />
+    <img src={backGroundLins} alt="" />
   </div>
   <div className="container">
     <div className="content">
@@ -28,7 +29,19 @@ const ShowCase = () => {
       alt="image of a man in a suit with a tablet"
     />
   </div>
+
+  
+
+
+
 </section>
+
+
+
+
+
+
+
   )
 }
 
