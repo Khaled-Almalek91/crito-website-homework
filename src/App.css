@@ -287,48 +287,63 @@ html, body {
   font-weight: normal;
 }
 
-.message .container {
+.message-form .container {
   background-color: #F0EFE9;
   padding-top: 125px;
 }
-.message .container h2 {
+.message-form .container h2 {
   text-align: center;
   font-family: "DM Sans";
   font-size: 45px;
   font-weight: bold;
 }
-.message .container .input-info {
+.message-form .container .input-info {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
 }
 @media (min-width: 768px) {
-  .message .container .input-info {
+  .message-form .container .input-info {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     padding: 30px 150px;
   }
 }
-.message .container .input-info input {
+.message-form .container .input-info input {
   border: 1px solid rgba(25, 25, 25, 0.1);
   padding: 15px 30px;
   border-radius: 25px;
   margin-bottom: 15px;
 }
-.message .container .input-info #M {
+.message-form .container .input-info span {
+  padding: 10px;
+  font-size: 0.8em;
+  color: #F94D1C;
+}
+.message-form .container .input-info .error {
+  color: #f94d1c;
+  border: 1px solid red;
+}
+.message-form .container .input-info #message {
   padding-bottom: 150px;
 }
 @media (min-width: 768px) {
-  .message .container .button-sendMessage {
+  .message-form .container .button-sendMessage {
     padding: 20px 150px;
+    display: flex;
+    justify-content: center;
   }
-}
-.message .container .button-sendMessage .btn-yellow {
-  display: block;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 100px;
+  .message-form .container .button-sendMessage button {
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+  }
+  .message-form .container .button-sendMessage button .btn-yellow {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,58 @@
+.wrapper footer {
+  background-color: #0E1021;
+}
+@media (min-width: 768px) {
+  .wrapper footer .container .topics {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.wrapper footer .container .topics .crito {
+  width: 300px;
+}
+.wrapper footer .container .topics .crito h2 {
+  padding-top: 30px;
+  padding-right: 35px;
+}
+.wrapper footer .container .topics p {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .wrapper footer .container .topics p {
+    padding-bottom: 30px;
+  }
+}
+.wrapper footer .container .topics h2 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+.wrapper footer .last-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.337254902);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .wrapper footer .last-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+}
+.wrapper footer .last-row h3 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+.wrapper footer .last-row .social-media a {
+  padding-left: 25px;
+  color: #FFFFFF;
+}
