@@ -22,31 +22,50 @@ const MessageFormola = () => {
     });
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     const validationErrors = {};
-
+  
     if (!formData.name.trim()) {
       validationErrors.name = "Name is required";
     }
-
+  
     if (!formData.email.trim()) {
       validationErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       validationErrors.email = "Email is not valid";
     }
-
+  
     if (!formData.message.trim()) {
       validationErrors.message = "Message is required";
     }
-
+  
     setErrors(validationErrors);
-
+  
     if (Object.keys(validationErrors).length === 0) {
-      alert("Form submitted successfully");
+      try {
+        const response = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        if (response.ok) {
+          alert('Form submitted successfully');
+        } else {
+          alert('Failed to submit form');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('An error occurred while submitting the form');
+      }
+    } else {
+      alert('Form validation failed. Please check the errors.');
     }
-  }
+  };
 
 
 
